@@ -1,0 +1,100 @@
+No
+Pemohon	
+Bulan	
+Shift	
+"Deskripsi Gangguan  / 
+Pekerjaan"	Indikator Gangguan
+Efek terhadap System
+Lokasi
+Nama Peralatan	
+Tagging	
+Kategori Peralatan	
+Bidang Pekerjaan	
+Status Pekerjaan	
+Prioritas	
+Jam Mulai Temuan	
+Dilaporkan Pada	
+Target	
+Jam Selesai	
+Diselesaikan Pada
+PIC Pekerjaan	
+Posisi	 
+Penyebab	
+Tindakan	
+Jenis Pekerjaan	
+Material yang digunakan	Catatan	
+Ket
+
+ $table->id();
+            $table->string('nama');
+            $table->string('Pekerjaan / Temuan');
+            $table->string('Lokasi');
+            $table->date('Waktu Temuan');
+            $table->string('Bidang Pekerjaan');
+            $table->string('PIC Pekerjaan');
+            $table->date('Waktu Selesai');
+            $table->string('Penyebab');
+            $table->string('Tindakan');
+            $table->string('Jenis Pekerjaan');
+            $table->string('Material');
+            $table->string('Keterangan');
+            $table->string('foto');
+            $table->timestamps();
+
+ <th scope="col">#</th>
+                  <th scope="col">Nama</th>
+                  <th scope="col">Pekerjaan / Temuan</th>
+                  <th scope="col">Lokasi</th>
+                  <th scope="col">Waktu Temuan</th>
+                  <th scope="col">Bidang Pekerjaan</th>
+                  <th scope="col">PIC Pekerjaan</th>
+                  <th scope="col">Waktu Selesai</th>
+                  <th scope="col">Penyebab</th>
+                  <th scope="col">Tindakan</th>
+                  <th scope="col">Jenis Pekerjaan</th>
+                  <th scope="col">Material</th>
+                  <th scope="col">Keterangan</th>
+                  <th scope="col">Foto</th>
+                  <th scope="col">Aksi</th>
+
+       $table->id();
+            $table->string('nama');
+            $table->string('Pekerjaan_Temuan');
+            $table->string('Lokasi');
+            $table->date('Waktu_Temuan');
+            $table->string('Bidang_Pekerjaan');
+            $table->string('PIC_Pekerjaan');
+            $table->date('Waktu_Selesai');
+            $table->string('Penyebab');
+            $table->string('Tindakan');
+            $table->string('Jenis_Pekerjaan');
+            $table->string('Material');
+            $table->string('Keterangan');
+            $table->string('foto');
+            $table->timestamps();
+
+  <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Nama Lengkap</label>
+                <input type="text" name="nama" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" value="{{  $data->nama }}">
+
+revisi 
+
+
+           $table->id();
+            $table->string('nama');
+            $table->string('pekerjaan_temuan');
+            $table->string('lokasi');
+            $table->date('tgl_open');
+            $table->time('jam_open');
+            $table->string('bidang_pekerjaan');
+            $table->string('pic');
+            $table->date('tgl_close');
+            $table->time('jam_close');
+            $table->string('penyebab');
+            $table->string('tindakan');
+            $table->string('jenis_pekerjaan');
+            $table->string('material');
+            $table->string('ket');
+            $table->string('foto_open');
+            $table->string('foto_close');
+            $table->timestamps();
